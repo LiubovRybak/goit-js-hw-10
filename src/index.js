@@ -16,15 +16,15 @@ input.addEventListener('input', debounce(searchCountries, DEBOUNCE_DELAY));
 function searchCountries (e) {
    let getCountry = e.target.value.trim();
    if (getCountry) {
-    fetchCountries(getCountry)
-    .then(dataCountries => {
-    renderCountries(dataCountries)
-    })
-    .catch(error => {
-    Notify.failure("Oops, there is no country with that name") 
-})
-} else {
-    list.innerHTML = ""
-    info.innerHTML = ""
-}
+        fetchCountries(getCountry)
+            .then(dataCountries => {
+                renderCountries(dataCountries)
+            })
+            .catch(error => {
+                Notify.failure("Oops, there is no country with that name") 
+            })
+    } else {
+        list.innerHTML = ""
+        info.innerHTML = ""
+    }
 }

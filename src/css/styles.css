@@ -7,7 +7,9 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-image: url(../img/board-globe-klas-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #212121;
   line-height: 1.5;
 }
@@ -21,4 +23,36 @@ body {
 
 input {
   border-color: chartreuse;
+  background-color: rgb(39, 30, 30);
+  color: chartreuse;
+  border-radius: 5px;
+}
+
+.country-list {
+  color: aliceblue;
+}
+
+.country-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.flag {
+  width: 30px;
+}
+
+.country-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.countries-list {
+  color: aliceblue;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.countries-list span {
+  font-weight: bold;
 }
